@@ -9,10 +9,10 @@ return {
             color0 = "#092236",
             color1 = "#ff5874",
             color2 = "#c3ccdc",
-			color3 = "#1c1e26",
-			color6 = "#a1aab8",
-			color7 = "#828697",
-			color8 = "#ae81ff",
+            color3 = "#1c1e26",
+            color6 = "#a1aab8",
+            color7 = "#828697",
+            color8 = "#ae81ff",
 		}
 		local my_lualine_theme = {
 			replace = {

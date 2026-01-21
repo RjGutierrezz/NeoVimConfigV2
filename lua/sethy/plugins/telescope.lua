@@ -47,4 +47,6 @@ return {
 
 		vim.keymap.set("n", "<leader>ths", "<cmd>Telescope themes<CR>", { noremap = true, silent = true, desc = "Theme Switcher" })
     end,
+    vim.keymap.set("n", "<leader>pb", "<cmd>Telescope current_buffer_fuzzy_find<CR>",
+  { desc = "Search current buffer" })
 }
