@@ -256,6 +256,8 @@ return {
     -- NOTE: CATPPUSINN
     {
         "catppuccin/nvim",
+        priority = 1000,
+        name = "catppuccin",
         config = function()
           require("catppuccin").setup({
               flavour = "auto", -- latte, frappe, macchiato, mocha
@@ -317,6 +319,7 @@ return {
               default_integrations = true,
               auto_integrations = false,
               integrations = {
+                  treesitter = true,
                   cmp = true,
                   gitsigns = true,
                   nvimtree = true,
@@ -328,6 +331,7 @@ return {
                   -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
               },
           })
+            vim.cmd("colorscheme catppuccin")
         end,
     },
     -- NOTE: One Dark
