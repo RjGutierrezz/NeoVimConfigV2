@@ -19,7 +19,6 @@ return {
                 ensure_installed = {
                     "json",
                     "javascript",
-                    "javascriptreact",
                     "typescript",
                     "tsx",
                     "go",
@@ -54,6 +53,12 @@ return {
                     },
                 },
                 additional_vim_regex_highlighting = false,
+            })
+
+            vim.api.nvim_create_autocmd("FileType", {
+              callback = function()
+                pcall(vim.treesitter.start)
+              end,
             })
         end,
     },
