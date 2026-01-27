@@ -133,6 +133,8 @@ return {
         vim.lsp.config("emmet_ls", {
             filetypes = {
                 "html",
+                "javascript",
+                "typescript",
                 "typescriptreact",
                 "javascriptreact",
                 "css",
