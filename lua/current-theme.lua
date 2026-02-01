@@ -1,1 +1,1 @@
-vim.cmd("colorscheme bamboo-vulgaris")
+vim.cmd("colorscheme bamboo")

@@ -130,17 +130,17 @@ return {
             dashboard = {
                 enabled = true,
                 sections = {
-                    { section = "header" },
+                  {
+                    section = "terminal",
+                    cmd = "ascii-image-converter ~/Documents/Wallpapers/eyes.jpg -C -c",
+                    random = 15,
+                    pane = 3,
+                    indent = 1,
+                    height = 30,
+                  },
+                    -- { section = "header" },
                     { section = "keys", gap = 1, padding = 1 },
                     { section = "startup" },
-                    {
-                        section = "terminal",
-                        cmd = "ascii-image-converter ~/Documents/Wallpapers/blood.jpg -C -c",
-                        random = 15,
-                        pane = 2,
-                        indent = 2,
-                        height = 30,
-                    },
                 },
             },
         },

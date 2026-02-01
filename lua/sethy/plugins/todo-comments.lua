@@ -33,7 +33,7 @@ return {
 				pattern = {
 					[[.*<(KEYWORDS)\s*:]], -- default pattern
 					[[<!--\s*(KEYWORDS)\s*:.*-->]], -- HTML comments with colon
-					[[<!--\s*(KEYWORDS)\s*.*-->]], -- HTML comments without colon
+          [[<!--\s*(KEYWORDS)\s*.*-->]], -- HTML comments without colon
 				},
 				comments_only = false, -- highlighting outside of comments
 			},
