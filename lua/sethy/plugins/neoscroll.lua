@@ -34,10 +34,10 @@ return {
 			end,
 
 			-- Fine-grained scroll (no cursor movement)
-			["<C-n>"] = function()
+			["<C-m>"] = function()
 				neoscroll.scroll(-0.1, { move_cursor = false, duration = 100 })
 			end,
-			["<C-m>"] = function()
+			["<C-n>"] = function()
 				neoscroll.scroll(0.1, { move_cursor = false, duration = 100 })
 			end,
 		}
