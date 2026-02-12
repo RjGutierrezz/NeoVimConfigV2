@@ -13,6 +13,17 @@ return {
 			easing = "linear", -- Default easing function
 			pre_hook = nil, -- Function to run before the scrolling animation starts
 			post_hook = nil, -- Function to run after the scrolling animation ends
+      mappings = {
+        "<C-u>",
+        "<C-d>",
+        "<C-b>",
+        "<C-f>",
+        "zt",
+        "zz",
+        "zb",
+        "G",
+        "gg",
+      },
 		})
 
 		-- Custom scroll mappings (tweak durations freely)
