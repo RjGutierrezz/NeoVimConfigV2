@@ -10,9 +10,12 @@ return {
 			respect_scrolloff = false, -- Stop scrolling when the cursor reaches the scrolloff margin of the file
 			cursor_scrolls_alone = true, -- The cursor will keep on scrolling even if the window cannot scroll further
 			duration_multiplier = 1.0, -- Global duration multiplier
-			easing = "linear", -- Default easing function
+			easing = "quadratic", -- Default easing function
 			pre_hook = nil, -- Function to run before the scrolling animation starts
 			post_hook = nil, -- Function to run after the scrolling animation ends
+        ignored_events = {           -- Events ignored while scrolling
+      'WinScrolled', 'CursorMoved'
+  },
       mappings = {
         "<C-u>",
         "<C-d>",
@@ -38,10 +41,10 @@ return {
 
 			-- Full page scroll (slower + heavier feel)
 			["<C-b>"] = function()
-				neoscroll.ctrl_b({ duration = 450, easing = "circular" })
+				neoscroll.ctrl_b({ duration = 350, easing = "circular" })
 			end,
 			["<C-f>"] = function()
-				neoscroll.ctrl_f({ duration = 450, easing = "circular" })
+				neoscroll.ctrl_f({ duration = 350, easing = "circular" })
 			end,
 
 			-- Fine-grained scroll (no cursor movement)

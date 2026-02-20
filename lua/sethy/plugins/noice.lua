@@ -15,7 +15,7 @@ return {
 					enabled = true,
 					view = "cmdline_popup",
 					format = {
-						cmdline = { pattern = "", icon = "󱐌 :", lang = "vim" },
+						cmdline = { pattern = "", icon = "✎ᝰ. :", lang = "vim" },
 						help = { pattern = "^:%s*he?l?p?%s+", icon = " 󰮦 :" },
 						search_down = { kind = "search", pattern = "^/", icon = "/", lang = "regex" },
 						search_up = { kind = "search", pattern = "^%?", icon = "/", lang = "regex" },
