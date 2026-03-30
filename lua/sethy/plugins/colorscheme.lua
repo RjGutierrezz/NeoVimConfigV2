@@ -318,10 +318,13 @@ return {
 				default_integrations = true,
 				auto_integrations = false,
 				integrations = {
-          luialine = true,
+					rainbow_delimeter = true,
+					lualine = {
+						enabled = true,
+						style = "default", -- or "catppuccin"
+					},
 					treesitter = true,
 					cmp = true,
-          markdown = true,
 					gitsigns = true,
 					nvimtree = true,
 					notify = false,
