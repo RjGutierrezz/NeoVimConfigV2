@@ -318,8 +318,10 @@ return {
 				default_integrations = true,
 				auto_integrations = false,
 				integrations = {
+          luialine = true,
 					treesitter = true,
 					cmp = true,
+          markdown = true,
 					gitsigns = true,
 					nvimtree = true,
 					notify = false,
