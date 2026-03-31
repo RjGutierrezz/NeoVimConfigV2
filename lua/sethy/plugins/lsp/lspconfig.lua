@@ -196,9 +196,9 @@ return {
 			},
 		})
 
-		-- pyright
-		vim.lsp.config("pyright", {
-			cmd = { "pyright-langserver", "--stdio" },
+		-- basedpyright
+		vim.lsp.config("basedpyright", {
+			cmd = { "basedpyright-langserver", "--stdio" },
 			filetypes = { "python" },
 			root_markers = {
 				"pyproject.toml",
@@ -209,6 +209,14 @@ return {
 				".git",
 			},
 			settings = {
+				basedpyright = {
+					analysis = {
+						typeCheckingMode = "standard",
+						autoSearchPaths = true,
+						diagnosticMode = "openFilesOnly",
+						useLibraryCodeForTypes = true,
+					},
+				},
 				python = {
 					analysis = {
 						autoSearchPaths = true,
@@ -219,9 +227,7 @@ return {
 			},
 		})
 
-		vim.lsp.enable("pyright")
-		-- vim.lsp.config("basedpyright", {})
-		-- vim.lsp.enable("basedpyright")
+		vim.lsp.enable("basedpyright")
 
 		vim.lsp.enable("lua_ls")
 		vim.lsp.enable("emmet_language_server")
