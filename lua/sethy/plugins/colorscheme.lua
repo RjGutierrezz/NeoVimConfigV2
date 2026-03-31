@@ -314,11 +314,22 @@ return {
 					},
 				},
 				color_overrides = {},
-				custom_highlights = {},
+
+				custom_highlights = function()
+					return {
+						LineNr = { fg = "#8087a2" },
+						CursorLineNr = { fg = "#8087a2", bold = true },
+
+						IblIndent = { fg = "#494d64" },
+						IblWhitespace = { fg = "#494d64" },
+						IblScope = { fg = "#9fa5bf" },
+					}
+				end,
 				default_integrations = true,
 				auto_integrations = false,
 				integrations = {
-					rainbow_delimeter = true,
+					lsp_trouble = true,
+					rainbow_delimiters = true,
 					lualine = {
 						enabled = true,
 						style = "default", -- or "catppuccin"
