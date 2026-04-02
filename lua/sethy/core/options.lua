@@ -4,9 +4,16 @@
 -- Disable netrw banner
 vim.cmd("let g:netrw_banner = 0")
 
+
+vim.opt.termguicolors = true
+
 -- line numbers
 vim.opt.nu = true
 vim.opt.relativenumber = true
+
+-- padding between the numbers and the editing area, u can add more space after
+-- l to add more padding
+vim.opt.statuscolumn = "%=%l   "
 
 -- indentation
 vim.opt.tabstop = 2
@@ -15,6 +22,9 @@ vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 vim.opt.smartindent = true
 vim.opt.wrap = false
+
+-- removeing ~ symbol from the buffer line
+vim.opt.fillchars:append({ eob = " " })
 
 -- Always hard wrap at 80 characters in every file
 vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
